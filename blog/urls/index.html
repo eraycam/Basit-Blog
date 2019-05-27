@@ -1,0 +1,21 @@
+{% extends "controls.html" %}
+
+{% block body %}
+
+<div style="margin-top :100px;" class="jumbotron text-center">
+
+    <h3>Blog Sayfama Hoşgeldiniz</h3>
+    <p>Bu blogta geliştirici araçları ve programlama dilleri hakkında bilgiler edine bilirsiniz.</p>
+
+    
+</div>
+
+<p>
+        {% if request.user.is_authenticated %}
+                Giriş Yapılmış, {{request.user.username}}
+        {% else %}
+                Giriş Yapılmamış
+        {% endif %}
+
+</p>
+{% endblock body %}

@@ -1,0 +1,48 @@
+{% extends "controls.html" %}
+
+{% block body %}
+
+<div class="row">
+
+      <!-- Post Content Column -->
+      <div class="col-lg-8">
+
+        <!-- Title -->
+        <h3 class="mt-4">{{article.baslik}}</h3>
+
+        <!-- Author -->
+        <p class="lead">
+          
+          Yazar:{{article.yazar.username}}
+        </p>
+
+        <hr>
+
+        <!-- Date/Time -->
+        <p>{{article.olusturma_tarihi}}</p>
+
+        <hr>
+
+        
+
+    
+
+        <!-- Post Content -->
+        <p class="lead">
+
+            {{article.icerik}}
+        
+        </p>
+     
+
+
+      
+          </div>
+        </div>
+
+
+    
+
+
+
+{% endblock body %}
